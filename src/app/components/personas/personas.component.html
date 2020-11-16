@@ -1,0 +1,13 @@
+<h1>Servicios Angular</h1>
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Edad</th>
+    </tr>
+    <tr *ngFor="let persona of personas">
+        <td>{{ persona.Nombre }}</td>
+        <td>{{ persona.Email}}</td>
+        <td>{{ persona.Edad}}</td>
+    </tr>
+</table>

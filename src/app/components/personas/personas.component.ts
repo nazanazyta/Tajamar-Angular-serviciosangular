@@ -5,7 +5,6 @@ import { Persona } from './../../models/persona';
 @Component({
   selector: 'app-personas',
   templateUrl: './personas.component.html',
-  styleUrls: ['./personas.component.css'],
   providers: [PersonaService]
 })
 export class PersonasComponent implements OnInit {

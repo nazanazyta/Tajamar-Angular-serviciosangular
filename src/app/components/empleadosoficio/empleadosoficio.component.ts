@@ -24,6 +24,8 @@ export class EmpleadosoficioComponent implements OnInit {
 
   constructor(private _service: EmpleadoService) {
     this.empleados = [];
+    this.oficios = [];
+    this.cajaofi = ElementRef.prototype;
   }
 
   ngOnInit(): void {

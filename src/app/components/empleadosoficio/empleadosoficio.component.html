@@ -1,6 +1,10 @@
 <h1>Buscador Api Empleados Oficio</h1>
 <form #oficiosForm="ngForm">
-    <select #cajaoficio (change)="buscarEmpleados()">
+    <label>Oficios: </label>
+    <select #cajaoficio (change)="buscarEmpleados()" class="form-control">
+        <!-- <ng-container *ngFor="let ofi of oficios">
+            <option value="{{ ofi }}">{{ ofi }}</option>
+        </ng-container> -->
         <option value="Oficios" selected>Oficios</option>
         <option *ngFor="let oficio of oficios">{{ oficio }}</option>
     </select>
@@ -9,7 +13,7 @@
 <div *ngIf="empleados.length > 0">
     <h1>{{ oficio }}</h1>
     <table class="table table-bordered table-dark">
-        <thead class="header">
+        <thead class="thead-light">
             <tr>
                 <th>Apellido</th>
                 <th>Oficio</th>

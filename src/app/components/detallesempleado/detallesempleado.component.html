@@ -1,0 +1,9 @@
+<div *ngIf="empleado != null">
+    <h1 style="color: green">Detalles de {{ empleado.apellido }}</h1>
+    <dl>
+        <dt>Oficio: {{ empleado.oficio }}</dt>
+        <dd>Salario: {{ empleado.salario }}</dd>
+        <dd>Departamento: {{ empleado.departamento }}</dd>
+    </dl>
+    <a [routerLink]="['/empleados']" class="btn btn-info">Volver al listado</a>
+</div>
